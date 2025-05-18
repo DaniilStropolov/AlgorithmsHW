@@ -9,9 +9,9 @@
             Console.Write("Введите ваше имя: ");
             string name = Console.ReadLine();
             Console.Write("У вас есть премиум? (true/false): ");
-            bool isPremiun = Convert.ToBoolean(Console.ReadLine());
+            bool isPremium = Convert.ToBoolean(Console.ReadLine());
 
-            User user = new User(login, name, isPremiun);
+            User user = new User(login, name, isPremium);
             user.Greet();
             if (!user.IsPremium)
             {
